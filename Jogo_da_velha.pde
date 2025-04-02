@@ -9,7 +9,7 @@ boolean showingEndScreen = false;
 String gameResult = "";
 
 void setup() {
-  size(480, 480); // Agora o tamanho é 480x480
+  size(480, 480); 
   background(0);
   drawMenu();
 }
@@ -55,8 +55,8 @@ void mousePressed() {
   
   if (gameOver) return;
 
-  int col = (mouseX - 40) / 133;  // Ajuste para centralizar no canvas
-  int row = (mouseY - 100) / 100; // Ajuste para centralizar no canvas
+  int col = (mouseX - 40) / 133;
+  int row = (mouseY - 100) / 100;
   
   if (row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == 0) {
     board[row][col] = playerTurn ? 1 : 2;
@@ -76,7 +76,6 @@ void cpuMove() {
 }
 
 int[] findBestMove() {
-  // Primeiro, tenta ganhar
   for (int r = 0; r < 3; r++) {
     for (int c = 0; c < 3; c++) {
       if (board[r][c] == 0) {
@@ -89,7 +88,6 @@ int[] findBestMove() {
     }
   }
   
-  // Depois, tenta bloquear o jogador
   for (int r = 0; r < 3; r++) {
     for (int c = 0; c < 3; c++) {
       if (board[r][c] == 0) {
@@ -103,7 +101,6 @@ int[] findBestMove() {
     }
   }
   
-  // Senão, joga na primeira posição livre
   for (int r = 0; r < 3; r++) {
     for (int c = 0; c < 3; c++) {
       if (board[r][c] == 0) {
@@ -171,15 +168,15 @@ void drawBoard() {
   
   stroke(255);
   for (int i = 1; i < 3; i++) {
-    line(i * 133 + 40, 100, i * 133 + 40, 400);  // Centraliza as linhas verticais
-    line(40, i * 100 + 100, 440, i * 100 + 100); // Centraliza as linhas horizontais
+    line(i * 133 + 40, 100, i * 133 + 40, 400);
+    line(40, i * 100 + 100, 440, i * 100 + 100);
   }
   textSize(40);
   for (int r = 0; r < 3; r++) {
     for (int c = 0; c < 3; c++) {
       // Agora os "X" e "O" são centralizados dentro de cada célula
-      if (board[r][c] == 1) text("X", c * 133 + 100, r * 100 + 150);  // Centraliza o X
-      if (board[r][c] == 2) text("O", c * 133 + 100, r * 100 + 150);  // Centraliza o O
+      if (board[r][c] == 1) text("X", c * 133 + 100, r * 100 + 150);
+      if (board[r][c] == 2) text("O", c * 133 + 100, r * 100 + 150);
     }
   }
 }

@@ -174,7 +174,6 @@ void drawBoard() {
   textSize(40);
   for (int r = 0; r < 3; r++) {
     for (int c = 0; c < 3; c++) {
-      // Agora os "X" e "O" são centralizados dentro de cada célula
       if (board[r][c] == 1) text("X", c * 133 + 100, r * 100 + 150);
       if (board[r][c] == 2) text("O", c * 133 + 100, r * 100 + 150);
     }

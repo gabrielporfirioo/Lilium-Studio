@@ -2,16 +2,16 @@
 String[] filmes = {
   "um sonho de liberdade", "o poderoso chefao", "o cavaleiro das trevas", "a lista de schindler", 
   "pulp fiction tempo de violencia", "o senhor dos anéis o retorno do rei", "clube da luta", "a origem", 
-  "forrest gump o contador de historias", "star wars o imperio contra-ataca", "os bons companheiros", 
+  "forrest gump o contador de historias",  "os bons companheiros", 
   "o senhor dos aneis a sociedade do anel", "cidade de deus", "o senhor dos aneis as duas torres", 
   "star wars a nova esperanza", "o iluminado", "a vida é bela", "matrix", "vingadores ultimato", 
-  "se7en os sete crimes capitais", "o pianista", "a bela e a fera", "o rei leao", "cidadao kane", 
+   "o pianista", "a bela e a fera", "o rei leao", "cidadao kane", 
   "taxi driver", "a sociedade dos poetas mortos", "o silencio dos inocentes", "the green mile", 
   "a caça", "gladiador", "os infiltrados", "memento", "batman o cavaleiro das trevas ressurge", 
   "whiplash", "o grande lebowski", "vingadores guerra infinita", "o labirinto do fauno", 
   "os sete samurais", "o exorcista", "12 homens e uma sentença", "o grande hotel budapeste", 
   "vingadores a guerra civil", "pantera negra", "a forma da agua", "o profissional", 
-  "o exterminador do futuro 2", "o lobo de wall street", "o homem que copiava", "trainspotting", "a rede social"
+  "o exterminador do futuro", "o lobo de wall street", "o homem que copiava", "trainspotting", "a rede social"
 };
 
 String[] futebol = {
@@ -21,7 +21,7 @@ String[] futebol = {
   "nacional", "remo", "botafogo sp", "atocha", "nova iguacu", "palmeiras sp", "cuiaba", "chapecoense", 
   "ponte preta", "guarani", "crb", "sampaio correa", "csa", "vitoria", "londrina", "vila nova", 
   "brasil de pelotas", "nautico", "santa cruz", "parana clube", "criciuma", "avai", "america rn", 
-  "internacional sp", "joinville", "sao caetano", "mogi mirim"
+  "internacional", "joinville", "sao caetano", "mogi mirim"
 };
 
 // Variáveis do jogo
